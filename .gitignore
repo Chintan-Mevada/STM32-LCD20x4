@@ -1,0 +1,11 @@
+.metadata
+
+/lcd_sd/.settings
+/lcd_sd/Core/Startup
+/lcd_sd/Core/Src/Backup
+/lcd_sd/Core/Inc/Backup
+/lcd_sd/Debug
+/lcd_sd/Drivers
+/lcd_sd/.cproject
+/lcd_sd/.mxproject
+/lcd_sd/*.launch
