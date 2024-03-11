@@ -240,10 +240,10 @@ bool TransferDataBlockWise(const char *source_file_name,
 	int result = false;
 	// Open the source file for reading
 	fresult = f_open(&sd_file, (const char*) source_file_name,
-			FA_READ | FA_OPEN_ALWAYS);
+			FA_READ | FA_OPEN_ALWAYS | FA_OPEN_EXISTING);
 	// Open the destination file for writing
 	fresult = f_open(&usb_file, (const char*) destination_file_name,
-			FA_WRITE | FA_OPEN_ALWAYS);
+			FA_WRITE | FA_CREATE_ALWAYS);
 
 	// Read and write data block by block
 	src_file_size = f_size(&sd_file);
